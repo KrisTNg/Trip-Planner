@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const TripSchema = new mongoose.Schema({
-    id: Number,
+    id: {type: Number, required:true},
     name: String,
     date: Date,
     description: String,
@@ -10,6 +10,4 @@ const TripSchema = new mongoose.Schema({
     
 });
 
-const Trip = mongoose.model("Trip", TripSchema);
-
-module.exports = Trip;
+module.exports = mongoose.model("Trip", TripSchema);
