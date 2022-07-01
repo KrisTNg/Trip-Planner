@@ -1,26 +1,13 @@
 const mongoose = require("mongoose");
 
 const TripSchema = new mongoose.Schema({
-    id:{
-        type: Number,
-        required: true
-    },
-    name:{
-        type: String
-    },
-    date:{
-        type: Date
-    },
-    description:{
-        type: String
-    },
-    owner_id:{
-        type:Number
-    },
-    user_id_list:{
-        type:Number,
-        default : []
-    }
+    id: Number,
+    name: String,
+    date: Date,
+    description: String,
+    owner_id:Number,
+    user_id_list:[]
+    
 });
 
 const Trip = mongoose.model("Trip", TripSchema);
