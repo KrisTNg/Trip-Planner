@@ -1,6 +1,6 @@
 const { request } = require("express");
 const express = require("express");
-const tripModel = require("./entity/trip");
+const tripModel = require("../server/models/trip")
 const app = express();
 const bodyParser = require("body-parser");
 

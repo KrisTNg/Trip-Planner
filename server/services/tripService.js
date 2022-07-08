@@ -1,4 +1,4 @@
-const Trip = require("../models/trip");
+const Trip = require("../models/trip")
 
 function TripService() {
     return {
