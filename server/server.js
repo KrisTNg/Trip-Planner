@@ -1,10 +1,13 @@
 
 const express = require('express');
 const mongoose = require('mongoose');//import mongoose module
+const Router = require("./routes");
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
+
+app.use(Router);
 
 app.get('/api', (req, res) => {
   res.json({ message: 'Hello from server!' });
