@@ -3,6 +3,10 @@ const express = require("express");
 const tripModel = require("../server/models/trip")
 const app = express();
 const bodyParser = require("body-parser");
+/*
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+*/
 
 app.use(bodyParser.json());
 
