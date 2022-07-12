@@ -7,7 +7,6 @@ const TripSchema = new mongoose.Schema({
     description: String,
     owner_id:Number,
     user_id_list:[]
-    
 });
 
 module.exports = mongoose.model("Trip", TripSchema);
